@@ -8,6 +8,7 @@ import Books from './pages/Books/Books';
 import Memes from './pages/Memes/Memes';
 import Quotes from './pages/Quotes/Quotes';
 import Movies from './pages/Movies/Movies';
+import WelcomeUser from './pages/WelcomeUser/WelcomeUser';
 
 import './App.css';
 import EnterName from './pages/EnterName/EnterName';
@@ -44,6 +45,9 @@ function App() {
         </Route>
         <Route exact path="/quotes">
           <Quotes />
+        </Route>
+        <Route exact path="/welcome-user">
+          <WelcomeUser/>
         </Route>
       </Switch>
     </Router>
