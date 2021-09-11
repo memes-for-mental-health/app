@@ -9,7 +9,7 @@ const Memes = () => {
                 ,'depressed':'https://www.reddit.com/r/2meirl4meirl/hot/.json?limit=40'}
 
   useEffect(async () => {
-    const response = await axios.get('https://www.reddit.com/r/aww/hot/.json?limit=40');
+    const response = await axios.get('https://www.reddit.com/r/2meirl4meirl/hot/.json?limit=40');
     setData(response.data.data.children)
   }, []);
 
@@ -19,11 +19,9 @@ const Memes = () => {
     {data.map((item, idx) => {
       console.log(item)
       return (
-        <>
-        <img  key={idx} src={item.data.url_overridden_by_dest} width="400" 
+        <img  className="pics" key={idx} src={item.data.url_overridden_by_dest} width="400" 
      height="500"/>
         
-        </>
       )
     })}
   </div>;
