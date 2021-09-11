@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Signup from './pages/Signup/Signup';
 import Login from './pages/Login/Login';
@@ -9,8 +10,11 @@ import Quotes from './pages/Quotes/Quotes';
 import Movies from './pages/Movies/Movies';
 
 import './App.css';
+import EnterName from './pages/EnterName/EnterName';
 
 function App() {
+  const [name, setName] = useState('');
+
   return (
     <Router>
       <Switch>
@@ -22,6 +26,9 @@ function App() {
         </Route>
         <Route exact path="/mood">
           <Mood />
+        </Route>
+        <Route exact path="/enter-name">
+          <EnterName setName={setName} />
         </Route>
         <Route exact path="/media">
           <Media />
