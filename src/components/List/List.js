@@ -7,7 +7,7 @@ const List = ({ listItems }) => {
     <>
       {listItems.map((listItem, idx) => {
         return (
-          <div className={styles.listItem} key={idx}>
+          <div className={styles.listItem} key={idx} onClick={listItem.onClick}>
             {listItem.data}
           </div>
         );

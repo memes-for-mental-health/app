@@ -1,21 +1,23 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import List from '../../components/List/List';
 
 import styles from './Media.module.css';
 
 const Media = () => {
-  const data = [
-    { data: 'Movie' },
-    { data: 'Video' },
-    { data: 'Quote' },
-    { data: 'Books' },
+  const history = useHistory();
+  const media = [
+    { data: 'Memes', onClick: () => history.push('/memes') },
+    { data: 'Video', onClick: () => history.push('/video') },
+    { data: 'Quote', onClick: () => history.push('/quote') },
+    { data: 'Books', onClick: () => history.push('/books') },
   ];
 
   return (
-    <div className={styles.media}>
-      <div className={styles.container}>
-        <div>What you interested in?</div>
-        <List listItems={data} />
+    <div className={styles.container}>
+      <div className={styles.media}>
+        <div className={styles.text}>What you interested in?</div>
+        <List listItems={media} />
       </div>
     </div>
   );
