@@ -1,0 +1,48 @@
+.input {
+  background: #efefef;
+  border-radius: 15px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.enterName {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.quoteContainer {
+  display: grid;
+  place-items: center;
+  border: 3px solid #ffc107;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+.quote {
+  color: #011686;
+  font-family: Cormorant Infant;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.button {
+  margin-top: 2rem;
+}
