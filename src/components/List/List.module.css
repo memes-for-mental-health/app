@@ -6,4 +6,9 @@
   border-radius: 15px;
   padding: 1rem 0.5rem;
   margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.listItem:hover {
+  filter: brightness(0.9);
 }

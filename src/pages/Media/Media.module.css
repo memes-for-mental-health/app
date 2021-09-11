@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+}
+.media {
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
