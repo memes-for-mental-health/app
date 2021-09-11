@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Signup from './pages/Signup/Signup';
 import Login from './pages/Login/Login';
-import Mood from './pages/Mood/Mood';
 import Media from './pages/Media/Media';
 import Books from './pages/Books/Books';
 import Memes from './pages/Memes/Memes';
@@ -23,9 +22,6 @@ function App() {
         </Route>
         <Route exact path="/signup">
           <Signup />
-        </Route>
-        <Route exact path="/mood">
-          <Mood />
         </Route>
         <Route exact path="/enter-name">
           <EnterName setName={setName} />
