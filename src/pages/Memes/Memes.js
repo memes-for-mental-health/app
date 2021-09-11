@@ -15,7 +15,7 @@ const Memes = () => {
 
   
 
-  return <div className="memes">Memes that will cure your 
+  return <div className="memes">Memes that will cure your
     {data.map((item, idx) => {
       console.log(item)
       return (
