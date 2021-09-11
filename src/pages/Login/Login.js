@@ -18,7 +18,7 @@ class GoogleSocialAuth extends Component {
         <h1>LOGIN WITH GOOGLE</h1>
       
         <GoogleLogin
-          clientId="<Google Client ID>"
+          clientId="226566158404-f3ppc07qjl0cql1v7m6936g9vuh1sd1i.apps.googleusercontent.com"
           buttonText="LOGIN WITH GOOGLE"
           onSuccess={responseGoogle}
           onFailure={responseGoogle}
