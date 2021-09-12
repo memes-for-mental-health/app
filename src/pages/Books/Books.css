@@ -31,7 +31,11 @@
 
 .header {
   font-size: 45px;
+<<<<<<< HEAD
+  font-family: "Mulish";
+=======
   font-family: 'Mulish';
+>>>>>>> af9ddee06613c69eeaaed2ff72dc9c845dc56b4b
   padding-left: 20px;
   color: #011686;
   text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
