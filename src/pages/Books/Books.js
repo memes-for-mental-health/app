@@ -5,15 +5,16 @@ import './Books.css';
 
 const Books = () => {
   const [data, setData] = useState([]);
-  const links = {
+  const moods = {
     sad: 'https://www.googleapis.com/books/v1/volumes?q=subject:fantasy',
     angry: 'https://www.googleapis.com/books/v1/volumes?q=subject:humor',
-    depressed: 'https://www.googleapis.com/books/v1/volumes?q=subject:self-help',
+    lonely: 'https://www.googleapis.com/books/v1/volumes?q=subject:romance',
+    anxious: 'https://www.googleapis.com/books/v1/volumes?q=subject:self-help',
   };
 
   useEffect(async () => {
     const response = await axios.get(
-      'https://www.googleapis.com/books/v1/volumes?q=subject:fantasy'
+      moods[mood]
     );
     console.log(response);
     setData(response.data.items);
