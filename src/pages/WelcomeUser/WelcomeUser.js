@@ -1,45 +1,31 @@
-import React from "react";
+import React from 'react';
 import Button from '../../components/Button/Button';
 
 import styles from './WelcomeUser.module.css';
 
+const WelcomeUser = ({ setMood }) => {
+  return (
+    <div className={styles.enterName}>
+      <h1>Welcome User</h1>
+      <div className={styles.container}>
+        <div className={styles.title}>How are you doing?</div>
 
-const WelcomeUser = ({  }) => {
+        <Button className={styles.button} onClick={() => setMood('sad')}>
+          Sad
+        </Button>
+        <Button className={styles.button} onClick={() => setMood('mad')}>
+          Mad
+        </Button>
+        <Button className={styles.button} onClick={() => setMood('happy')}>
+          Happy
+        </Button>
 
-    return (
-        
-        
-        
-        <div className={styles.enterName}>
-            <h1>Welcome User</h1>
-        <div className={styles.container}>
-          <div className={styles.title}>How are you doing?</div>
-          
-          <Button className={styles.button} >
-              Sad
-              </Button>
-            <Button className={styles.button} >
-            Mad
-            </Button>
-    
-            <Button className={styles.button} >
-            Sad
-            </Button>
-            
-            <Button className={styles.button} >
-            Happy
-            </Button>
-            
-            <Button className={styles.button}>
-            Anxious
-            </Button>
-
-        </div>
+        <Button className={styles.button} onClick={() => setMood('anxious')}>
+          Anxious
+        </Button>
       </div>
-    );
-
+    </div>
+  );
 };
-
-
 
 export default WelcomeUser;

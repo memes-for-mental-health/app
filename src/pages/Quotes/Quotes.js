@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Quotes = () => {
+const Quotes = ({ mood }) => {
   return <div>Quotes</div>;
 };
 
