@@ -14,6 +14,8 @@ import EnterName from './pages/EnterName/EnterName';
 
 function App() {
   const [name, setName] = useState('');
+  const [mood, setMood] = useState();
+  console.log(mood);
 
   return (
     <Router>
@@ -31,19 +33,19 @@ function App() {
           <Media />
         </Route>
         <Route exact path="/memes">
-          <Memes />
+          <Memes mood={mood} />
         </Route>
         <Route exact path="/books">
-          <Books />
+          <Books mood={mood} />
         </Route>
         <Route exact path="/movies">
-          <Movies />
+          <Movies mood={mood} />
         </Route>
         <Route exact path="/quotes">
-          <Quotes />
+          <Quotes mood={mood} />
         </Route>
         <Route exact path="/welcome-user">
-          <WelcomeUser />
+          <WelcomeUser setMood={setMood} />
         </Route>
       </Switch>
     </Router>

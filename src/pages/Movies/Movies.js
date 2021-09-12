@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Movies = () => {
+const Movies = ({ mood }) => {
   return <div>Movies</div>;
 };
 
