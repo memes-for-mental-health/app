@@ -3,15 +3,19 @@ import axios from 'axios';
 
 import './Books.css';
 
+<<<<<<< HEAD
+const Books = ({mood}) => {
+=======
 const Books = ({ mood }) => {
+>>>>>>> c16a617d60aae98e0602a76f8cc63f745fd73063
   const [data, setData] = useState([]);
   const moods = {
     sad: 'https://www.googleapis.com/books/v1/volumes?q=subject:fantasy',
-    angry: 'https://www.googleapis.com/books/v1/volumes?q=subject:humor',
+    mad: 'https://www.googleapis.com/books/v1/volumes?q=subject:humor',
     lonely: 'https://www.googleapis.com/books/v1/volumes?q=subject:romance',
     anxious: 'https://www.googleapis.com/books/v1/volumes?q=subject:self-help',
   };
-
+  console.log(moods[mood])
   useEffect(async () => {
     const response = await axios.get(moods[mood]);
     console.log(response);
