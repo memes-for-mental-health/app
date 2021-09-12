@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import './Books.css';
 
-const Books = () => {
+const Books = ({ mood }) => {
   const [data, setData] = useState([]);
   const moods = {
     sad: 'https://www.googleapis.com/books/v1/volumes?q=subject:fantasy',
@@ -13,9 +13,7 @@ const Books = () => {
   };
 
   useEffect(async () => {
-    const response = await axios.get(
-      moods[mood]
-    );
+    const response = await axios.get(moods[mood]);
     console.log(response);
     setData(response.data.items);
   }, []);
