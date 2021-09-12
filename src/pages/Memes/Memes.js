@@ -21,7 +21,7 @@ const Memes = ({ mood }) => {
 
   return (
     <div className={styles.memes}>
-      Memes that will cure your
+      <h1>Memes that will cure you</h1>
       {data.map((item, idx) => {
         console.log(item);
         return (
