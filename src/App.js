@@ -45,7 +45,7 @@ function App() {
           <Quotes mood={mood} />
         </Route>
         <Route exact path="/welcome-user">
-          <WelcomeUser setMood={setMood} />
+          <WelcomeUser setMood={setMood} name={name} />
         </Route>
       </Switch>
     </Router>
