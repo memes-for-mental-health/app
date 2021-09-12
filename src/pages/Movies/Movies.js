@@ -6,14 +6,15 @@ import styles from './Movies.module.css';
 const Movies = ({ mood }) => {
   const [data, setData] = useState([]);
   const moods = {
-    sad: 'https://www.reddit.com/r/aww/hot/.json?limit=40',
-    mad: 'https://www.reddit.com/r/memes/hot/.json?limit=40',
-    anxious: 'https://www.reddit.com/r/2meirl4meirl/hot/.json?limit=40',
+    sad: 'https://api.themoviedb.org/3/discover/movie?api_key=f3c918d0bb5af30e06effad7e80a92f7&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=35&with_watch_monetization_types=flatrate',
+    mad: 'https://api.themoviedb.org/3/discover/movie?api_key=f3c918d0bb5af30e06effad7e80a92f7&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=12&with_watch_monetization_types=flatrate',
+    lonely: 'https://api.themoviedb.org/3/discover/movie?api_key=f3c918d0bb5af30e06effad7e80a92f7&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=10749&with_watch_monetization_types=flatrate',
+    anxious: 'https://api.themoviedb.org/3/discover/movie?api_key=f3c918d0bb5af30e06effad7e80a92f7&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=35&with_watch_monetization_types=flatrate',
   };
 
   useEffect(async () => {
     const response = await axios.get(
-      'https://api.themoviedb.org/3/discover/movie?api_key=f3c918d0bb5af30e06effad7e80a92f7&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=35&with_watch_monetization_types=flatrate'
+      moods[mood]
     );
     setData(response.data.results);
   }, []);
