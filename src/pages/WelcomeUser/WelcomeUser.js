@@ -3,10 +3,10 @@ import Button from '../../components/Button/Button';
 
 import styles from './WelcomeUser.module.css';
 
-const WelcomeUser = ({ setMood }) => {
+const WelcomeUser = ({ setMood, name }) => {
   return (
     <div className={styles.enterName}>
-      <h1>Welcome User</h1>
+      <h1>Welcome {name}</h1>
       <div className={styles.container}>
         <div className={styles.title}>How are you doing?</div>
 
