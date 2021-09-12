@@ -18,10 +18,11 @@ const Memes = ({ mood }) => {
     );
     setData(response.data.data.children);
   }, []);
-
+  console.log('mood is:' + mood)
   return (
+    
     <div className={styles.memes}>
-      Memes that will cure your
+      Memes that will cure your {mood}
       {data.map((item, idx) => {
         console.log(item);
         return (
