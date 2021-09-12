@@ -9,7 +9,7 @@ const Movies = ({ mood }) => {
     sad: 'https://api.themoviedb.org/3/discover/movie?api_key=f3c918d0bb5af30e06effad7e80a92f7&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=35&with_watch_monetization_types=flatrate',
     mad: 'https://api.themoviedb.org/3/discover/movie?api_key=f3c918d0bb5af30e06effad7e80a92f7&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=12&with_watch_monetization_types=flatrate',
     lonely: 'https://api.themoviedb.org/3/discover/movie?api_key=f3c918d0bb5af30e06effad7e80a92f7&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=10749&with_watch_monetization_types=flatrate',
-    anxious: 'https://api.themoviedb.org/3/discover/movie?api_key=f3c918d0bb5af30e06effad7e80a92f7&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=35&with_watch_monetization_types=flatrate',
+    anxious: 'https://api.themoviedb.org/3/discover/movie?api_key=f3c918d0bb5af30e06effad7e80a92f7&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=9648&with_watch_monetization_types=flatrate',
   };
 
   useEffect(async () => {
