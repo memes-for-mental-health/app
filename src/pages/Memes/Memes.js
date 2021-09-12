@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 
+import styles from './Memes.module.css';
+
 const Memes = () => {
   const [data, setData] = useState([]);
   const moods = ['sad', 'angry']
@@ -15,13 +17,15 @@ const Memes = () => {
 
   
 
-  return <div className="memes">Memes that will cure your
+  return <div className={styles.memes}>Memes that will cure your
     {data.map((item, idx) => {
       console.log(item)
       return (
         <>
-        <div>{item.data.title}</div>
-        <img  className="pics" key={idx} src={item.data.url_overridden_by_dest} width="20%"/>
+        <div className={styles.memepack}>{item.data.title}
+        <img  className={styles.memepics} key={idx} src={item.data.url_overridden_by_dest}/>
+        </div>
+        
         </>
         
       )

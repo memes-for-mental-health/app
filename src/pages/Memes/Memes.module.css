@@ -1,0 +1,19 @@
+.memes {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.memepics{
+    width: 100%;
+    
+    border-radius: 30px;
+
+}
+
+.memepack{
+    border-radius: 30px;
+    border: 5px solid #555;
+    width: 20%;
+    padding: 5px;
+}
