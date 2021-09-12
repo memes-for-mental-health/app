@@ -7,7 +7,7 @@ import styles from './EnterName.module.css';
 const EnterName = ({ setName }) => {
   const [input, setInput] = useState('');
   const history = useHistory();
-  const quote = '“Inspirational quote here” - Billy Bob';
+  const quote = '“Knowledge is power.” – Francis Bacon';
 
   const handleClick = (e) => {
     setName(input);
@@ -28,7 +28,7 @@ const EnterName = ({ setName }) => {
           <div className={styles.quote}>{quote}</div>
         </div>
         <Button className={styles.button} onClick={handleClick}>
-          New Quote
+          Enter
         </Button>
       </div>
     </div>
