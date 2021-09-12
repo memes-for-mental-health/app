@@ -8,8 +8,8 @@ const Media = () => {
   const history = useHistory();
   const media = [
     { data: 'Memes', onClick: () => history.push('/memes') },
-    { data: 'Video', onClick: () => history.push('/video') },
-    { data: 'Quote', onClick: () => history.push('/quote') },
+    { data: 'Movies', onClick: () => history.push('/movies') },
+    { data: 'Quote', onClick: () => history.push('/quotes') },
     { data: 'Books', onClick: () => history.push('/books') },
   ];
 

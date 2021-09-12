@@ -43,7 +43,7 @@ function App() {
           <Quotes />
         </Route>
         <Route exact path="/welcome-user">
-          <WelcomeUser/>
+          <WelcomeUser />
         </Route>
       </Switch>
     </Router>
