@@ -4,7 +4,7 @@ import axios from 'axios';
 import styles from './Quotes.module.css';
 
 const moodKeys = {
-  angry: 'patience',
+  mad: 'patience',
   anxious: 'motivational',
   sad: 'peace',
   lonely: 'marriage',
