@@ -6,7 +6,11 @@ import './Books.css';
 
 const Books = () => {
   const [data, setData] = useState([]);
-  const links = {}
+  const links = {
+    sad: 'https://www.googleapis.com/books/v1/volumes?q=subject:fantasy',
+    angry: 'https://www.googleapis.com/books/v1/volumes?q=subject:humor',
+    depressed: 'https://www.googleapis.com/books/v1/volumes?q=subject:self-help',
+  };
 
   useEffect(async () => {
     const response = await axios.get('https://www.googleapis.com/books/v1/volumes?q=subject:fantasy');
