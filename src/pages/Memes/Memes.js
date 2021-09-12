@@ -5,11 +5,10 @@ import styles from './Memes.module.css';
 
 const Memes = ({ mood }) => {
   const [data, setData] = useState([]);
-  const moods = ['sad', 'angry'];
-  const links = {
+  const moods = {
     sad: 'https://www.reddit.com/r/aww/hot/.json?limit=40',
-    angry: 'https://www.reddit.com/r/memes/hot/.json?limit=40',
-    depressed: 'https://www.reddit.com/r/2meirl4meirl/hot/.json?limit=40',
+    mad: 'https://www.reddit.com/r/memes/hot/.json?limit=40',
+    anxious: 'https://www.reddit.com/r/2meirl4meirl/hot/.json?limit=40',
   };
 
   useEffect(async () => {
@@ -22,7 +21,7 @@ const Memes = ({ mood }) => {
   return (
     
     <div className={styles.memes}>
-      Memes that will cure your {mood}
+      <h1 className={styles.text}>Memes that will cure your {mood}</h1>
       {data.map((item, idx) => {
         console.log(item);
         return (

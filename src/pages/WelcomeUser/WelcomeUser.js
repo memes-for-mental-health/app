@@ -11,17 +11,17 @@ const WelcomeUser = ({ setMood, name }) => {
         <div className={styles.title}>How are you doing?</div>
 
         <Button className={styles.button} onClick={() => setMood('sad')}>
-          Sad
+          Sad &#128532;
         </Button>
         <Button className={styles.button} onClick={() => setMood('mad')}>
-          Mad
+          Mad &#128545;
         </Button>
-        <Button className={styles.button} onClick={() => setMood('happy')}>
-          Happy
+        <Button className={styles.button} onClick={() => setMood('lonely')}>
+          Lonely &#128148;
         </Button>
 
         <Button className={styles.button} onClick={() => setMood('anxious')}>
-          Anxious
+          Anxious &#128534;
         </Button>
       </div>
     </div>
