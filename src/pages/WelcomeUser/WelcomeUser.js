@@ -19,7 +19,7 @@ const WelcomeUser = ({ setMood, name }) => {
             history.push('/media');
           }}
         >
-          Sad
+          Sad &#128532;
         </Button>
         <Button
           className={styles.button}
@@ -28,7 +28,7 @@ const WelcomeUser = ({ setMood, name }) => {
             history.push('/media');
           }}
         >
-          Mad
+          Mad  &#128545;
         </Button>
         <Button
           className={styles.button}
@@ -37,7 +37,7 @@ const WelcomeUser = ({ setMood, name }) => {
             history.push('/media');
           }}
         >
-          Happy
+          Lonely &#128148;
         </Button>
         <Button
           className={styles.button}
@@ -46,7 +46,7 @@ const WelcomeUser = ({ setMood, name }) => {
             history.push('/media');
           }}
         >
-          Anxious
+          Anxious &#128534;
         </Button>
       </div>
     </div>
