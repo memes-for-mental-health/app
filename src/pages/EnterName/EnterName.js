@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router';
 import Button from '../../components/Button/Button';
 
 import styles from './EnterName.module.css';
 
 const EnterName = ({ setName }) => {
   const [input, setInput] = useState('');
+  const history = useHistory();
   const quote = '“Inspirational quote here” - Billy Bob';
 
   const handleClick = (e) => {
-    setName(e.target.value);
+    setName(input);
+    console.log(input);
+    history.push('/welcome-user');
   };
 
   return (
