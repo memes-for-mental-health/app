@@ -33,7 +33,7 @@ const WelcomeUser = ({ setMood, name }) => {
         <Button
           className={styles.button}
           onClick={() => {
-            setMood('happy');
+            setMood('lonely');
             history.push('/media');
           }}
         >
@@ -42,7 +42,7 @@ const WelcomeUser = ({ setMood, name }) => {
         <Button
           className={styles.button}
           onClick={() => {
-            setMood('media');
+            setMood('anxious');
             history.push('/media');
           }}
         >

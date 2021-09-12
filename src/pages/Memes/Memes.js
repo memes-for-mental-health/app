@@ -6,14 +6,15 @@ import styles from './Memes.module.css';
 const Memes = ({ mood }) => {
   const [data, setData] = useState([]);
   const moods = {
-    sad: 'https://www.reddit.com/r/aww/hot/.json?limit=40',
+    sad: 'https://www.reddit.com/r/cat/hot/.json?limit=40',
     mad: 'https://www.reddit.com/r/memes/hot/.json?limit=40',
-    anxious: 'https://www.reddit.com/r/2meirl4meirl/hot/.json?limit=40',
+    lonely: 'https://www.reddit.com/r/2meirl4meirl/hot/.json?limit=40',
+    anxious: 'https://www.reddit.com/r/anxietymemes/hot/.json?limit=40',
   };
 
   useEffect(async () => {
     const response = await axios.get(
-      'https://www.reddit.com/r/memes/hot/.json?limit=200'
+      moods[mood]
     );
     setData(response.data.data.children);
   }, []);
